@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
+ */
 package br.com.bultzpc.controller;
 
 import java.io.IOException;
@@ -16,28 +20,28 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author lucas
+ * @author Aluno
  */
-public class LoginController implements Initializable {
+public class MenuController implements Initializable {
 
     @FXML
-    private Button btnMenu;
-
-
+    private Button btnSair;
 
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }
+    }    
 
     @FXML
-    private void btnMenu_click(ActionEvent event) {
+    private void btnSair_click(ActionEvent event) {
         try {
             // Carregar o arquivo FXML da tela "menu.fxml"
-            Parent menuRoot = FXMLLoader.load(getClass().getResource("/br/com/bultzpc/view/menu.fxml"));
+            Parent menuRoot = FXMLLoader.load(getClass().getResource("/br/com/bultzpc/view/login.fxml"));
             
             // Criar uma nova cena
             Scene menuScene = new Scene(menuRoot);
@@ -47,12 +51,11 @@ public class LoginController implements Initializable {
 
             // Configurar a nova cena
             window.setScene(menuScene);
-            window.setTitle("Tela Menu");
+            window.setTitle("Tela de login");
             window.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-
+    
 }

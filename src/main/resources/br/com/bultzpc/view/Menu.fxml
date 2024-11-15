@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.bultzpc.controller.MenuController">
+
+   <children>
+      <ImageView fitHeight="376.0" fitWidth="434.0" layoutX="328.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./assets/logo500.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="386.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem vindo!" textAlignment="CENTER" wrappingWidth="260.13671875">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1a1a1d" height="540.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1a1a1d" height="540.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20.0; -fx-arc-width: 10.0;" width="185.0" />
+      <Text layoutX="30.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="122.869140625">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+         <fill>
+            <LinearGradient>
+               <stops>
+                  <Stop color="#741845" />
+                  <Stop color="#741845" offset="0.20" />
+                  <Stop color="#a64d79" offset="0.80" />
+                  <Stop color="#a64d79" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="WHITE" layoutX="30.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionário" textAlignment="CENTER" wrappingWidth="122.869140625">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="30.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos" textAlignment="CENTER" wrappingWidth="122.869140625">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="30.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedidos" textAlignment="CENTER" wrappingWidth="122.869140625">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="30.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes" textAlignment="CENTER" wrappingWidth="122.869140625">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="30.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consulta avançada" textAlignment="CENTER" wrappingWidth="122.869140625">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnSair" layoutX="62.0" layoutY="458.0" mnemonicParsing="false" onAction="#btnSair_click" text="Sair">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
