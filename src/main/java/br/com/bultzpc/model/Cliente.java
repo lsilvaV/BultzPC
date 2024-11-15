@@ -2,13 +2,8 @@ package br.com.bultzpc.model;
 
 public class Cliente {
     private String cpf, nome, dataNasc, endereco, email;
-
-    @Override
-    public String toString() {
-        return "Cliente{" + "cpf=" + cpf + ", nome=" + nome + ", dataNasc=" + dataNasc + ", endereco=" + endereco + ", email=" + email + '}';
-    }
-
-
+    
+    // Construtor
     public Cliente(String cpf, String nome, String dataNasc, String endereco, String email) {
         this.cpf = cpf;
         this.nome = nome;
@@ -16,7 +11,14 @@ public class Cliente {
         this.endereco = endereco;
         this.email = email;
     }
+    
+    // ToString
+    @Override
+    public String toString() {
+        return "Cliente{" + "cpf=" + cpf + ", nome=" + nome + ", dataNasc=" + dataNasc + ", endereco=" + endereco + ", email=" + email + '}';
+    }
 
+    // Getters e Setters
     public String getCpf() {
         return cpf;
     }
@@ -56,6 +58,4 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
 }
