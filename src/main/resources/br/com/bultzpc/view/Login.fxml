@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.bultzpc.controller.LoginController">
    <children>
-      <Button fx:id="btnMenu" layoutX="274.0" layoutY="188.0" mnemonicParsing="false" onAction="#btnMenu_click" text="Button" />
+      <GridPane layoutX="86.0" layoutY="142.0" prefHeight="116.0" prefWidth="428.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="66.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.0" minWidth="10.0" prefWidth="362.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblEmail" alignment="CENTER" prefHeight="15.0" prefWidth="78.0" text="E-mail:">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSenha" alignment="CENTER" prefHeight="17.0" prefWidth="74.0" text="Senha:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" GridPane.columnIndex="1" />
+            <TextField fx:id="txtSenha" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btnEntrar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnEntrar_click" prefHeight="38.0" prefWidth="409.0" text="Entrar" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
    </children>
 </AnchorPane>

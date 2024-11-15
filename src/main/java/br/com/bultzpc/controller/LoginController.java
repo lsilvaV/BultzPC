@@ -11,6 +11,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -21,7 +23,15 @@ import javafx.stage.Stage;
 public class LoginController implements Initializable {
 
     @FXML
-    private Button btnMenu;
+    private Label lblEmail;
+    @FXML
+    private Label lblSenha;
+    @FXML
+    private TextField txtEmail;
+    @FXML
+    private TextField txtSenha;
+    @FXML
+    private Button btnEntrar;
 
 
 
@@ -34,25 +44,7 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void btnMenu_click(ActionEvent event) {
-        try {
-            // Carregar o arquivo FXML da tela "menu.fxml"
-            Parent menuRoot = FXMLLoader.load(getClass().getResource("/br/com/bultzpc/view/menu.fxml"));
-            
-            // Criar uma nova cena
-            Scene menuScene = new Scene(menuRoot);
-
-            // Obter o Stage a partir do evento
-            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-            // Configurar a nova cena
-            window.setScene(menuScene);
-            window.setTitle("Tela Menu");
-            window.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void btnEntrar_click(ActionEvent event) {
+        // Fazer ação de verificar login e senha com o banco de dados
     }
-
-
 }
